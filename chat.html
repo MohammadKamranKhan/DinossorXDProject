@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Page</title>
+    <!-- including bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- owl carousel inclues css -->
+    <link href="owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="owl-carousel/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- responsive css  -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header Section -->
+    <header class="header-section">
+        <nav class="navbar navbar-light shadow p-3  bg-white ">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logoo.png" class="logo-img">
+            </a>
+            <form class="form-inline">
+              <button class="login-btn text-white"  type="submit"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</button>
+              <a href="#"><img src="assets/images/Icon feather-shopping-cart.png"  class="cart-img mr-5"></a>
+            </form>
+        </nav>
+   </header>
+     <!-- Start main body -->
+  <section class="container-fluid">
+    <div class="row ">
+        <!-- Start sidebar -->
+        <div class="col-md-3  pl-0 shadow-lg bg-white sidebarShow"  id="collapseExample">
+            <div class="sidebar pt-5  h-100 " >
+
+                <ul>
+                    <li class="active"><a href="#" ><img src="assets/images/Icon awesome-shopping-bag.png" class="pr-3"> Purchase </a></li>
+                    <li><a href="#"><img src="assets/images/Icon material-payment.png" class="pr-3"> Payment</a></li>
+                    <li><a href="#"><img src="assets/images/Icon feather-settings.png" class="pr-3"> Settings</a></li>
+                    <li><a href="#"><img src="assets/images/Icon feather-help-circle.png" class="pr-3"> Help</a></li>
+                    <li><a href="#"><img src="assets/images/Icon awesome-boxes.png" class="pr-3"> Categories</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- End sidebar -->
+        <div class="col-md-9 pb-5">
+            <a  href="javascript:void(0)" onclick="hideSidebar()"><img src="assets/images/Icon awesome-bars.png" class="sidebar-menu" ></a>
+            <div class="row mt-5 pl-md-5">
+                <div class="col-md-1 mr-5">
+                    <button class="image-slider-btn">
+                        <span class="nearby-text">Nearby</span>
+                        <span class="profiles-text">Profiles</span>
+                    </button>
+                    <div class="label-circle shadow">
+                        <span class="label-text">4</span>
+                    </div>
+                </div>
+                <div class="col-md-10 res-caro  ">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item slider-images" ><img src="assets/images/Rectangle-15.png" >
+                        </div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-14.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-13.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-12.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-11.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-10.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-9.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-8.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-7.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-6.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-5.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-4.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-3.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-2.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-1.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-50.png" ></div>
+                    </div>
+                    <div class="chevron-next-right owl-next">
+                        <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button>
+                        <i class="fa fa-chevron-right " role="presentation"></i>
+                    </div>
+                </div>
+            </div>
+             <!-- Post Composing Section Start -->
+             <div class="row mt-4">
+                <div class="col-md-2 pl-5">
+                    <img src="assets/images/Rectangle 50.png" clas="post-image">
+                    <figcaption class="figure-caption pl-2">
+                        
+                            <img src="assets/images/gg.png"> + 
+                            <span class="img-cap">
+                                2130
+                            </span>
+                    </figcaption>
+                </div>
+                <div class="col-md-10 mt-2">
+                    <div class="input-group  ">
+                        <input type="text"  class="form-control pb-2 post-input-bar ml-2" placeholder="Looking For ?">
+                        <div class="input-group-append">
+                            <button class="p-4 input-group-text" id="basic-addon2">Search</button>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+            <!-- Message Area Start -->
+            <div class="container-fluid" id='res-compose'>
+                <div class="row mt-4">
+                    <div class="col-md-1 pl-5">
+                        <img src="assets/images/Icon awesome-envelope.png" class='res-envelope'>
+                    </div>
+                    <div class="col-md-1">
+                        <img src="assets/images/Icon material-notifications.png">
+                    </div> 
+                    <div class="col-md-2" id="res-shop">
+                        <select class="form-control add-product-btn-res select-option-box" >
+                            <option >Shop</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2" id="res-sell">
+                        <button class="add-product-btn add-product-btn-res">Add Product</button>
+                    </div> 
+            </div>
+            </div>
+            <!-- Message Area End -->
+            <!-- gallery images starts -->
+            <div class="container-fluid">
+                <div class="row pl-4 pt-5">
+                    <div class="col-md-12">
+                        <h4>Near You</h4>
+                        <!-- first row of images start -->
+                        <div class="row no-gutters">
+                            <!-- start::first image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Jasmine</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::first image  -->
+                            <!-- start::2nd image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::2nd image  -->
+                            <!-- start::third image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::third image  -->
+                            <!-- start::fourth image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::fourth image  -->
+                            <!-- start::fifth image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::fifth image  -->
+                        </div>
+                        <!-- first row of images end -->
+                        <!-- 2nd row of images start -->
+                        <div class="row no-gutters">
+                            <!-- start::first image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::first image  -->
+                            <!-- start::2nd image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::2nd image  -->
+                            <!-- start::third image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::third image  -->
+                            <!-- start::fourth image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::fourth image  -->
+                            <!-- start::fifth image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::fifth image  -->
+                        </div>
+                        <!-- 2nd row of images end -->
+
+                        <!-- 3rd row of images start -->
+                        <div class="row no-gutters">
+                            <!-- start::first image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::first image  -->
+                            <!-- start::2nd image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::2nd image  -->
+                            <!-- start::third image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::third image  -->
+                            <!-- start::fourth image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::fourth image  -->
+                            <!-- start::fifth image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::fifth image  -->
+                        </div>
+                        <!-- 3rd row of images end -->
+                        <!-- 4th row of images start -->
+                        <div class="row no-gutters">
+                            <!-- start::first image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::first image  -->
+                            <!-- start::2nd image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::2nd image  -->
+                            <!-- start::third image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::third image  -->
+                            <!-- start::fourth image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::fourth image  -->
+                            <!-- start::fifth image  -->
+                            <div class="col-md-2">
+                                <span class='profile-name'>Rohan</span>
+                                <img src="assets/images/Rectangle 7.png" class='near-you-profile-img'>
+                                <span class="profile-info-status"><img src='assets/images/Icon awesome-circle.png'></span>
+                                <div class="profile-info-sec">
+                                    <span class='profile-distance'>46 meters</span>
+                                </div>
+                            </div>
+                            <!-- end::fifth image  -->
+                        </div>
+                        <!-- 4th row of images end -->
+                        <p><button class="login-btn text-white  mt-3" type="submit">Inbox</button></p>
+                    </div>
+                </div>  
+            </div>
+            <!-- gallery images ends -->
+            <!-- chat sections :: start -->
+            <div class="container-fluid">
+                <div class="row pl-4 pt-5 ">
+                    <!-- left chat section :: start  -->
+                    <div class="col-md-5">
+                        <div class="left-chat-holder pb-3">
+                            <!-- upper profile section :: start  -->
+                               <div class="row pt-1">
+                                    <div class="col-md-2"><img src="assets/images/Rectangle 50.png"><img src='assets/images/Icon awesome-circle.png' class='user-profile-status'></div>
+                                    <div class="col-md-8" ><span class='user-profile-name'>Shivam Gupta</span></div>
+                                    <div class="col-md-2"><i class="fa fa-ellipsis-h user-p" ></i></div>
+                               </div>
+                            <!-- upper profile section :: end  -->
+                            <!-- input bar :: starts  -->
+                            <div class="container-fluid">
+                                <div class="row pl-1 pt-2">
+                                    <div class="col-md-12">
+                                        <input type='text' placeholder="People, group & messages" class='form-control search-icon'>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- input bar :: ends  -->
+                            <!-- contact list1 :: start  -->
+                            <div class="container-fluid">
+                                <div class="row  pt-2">
+                                    <div class="col-md-4">
+                                        <img src="assets/images/Rectangle 50.png" class='suggested-profile'>
+                                        <img src="assets/images/Icon awesome-circle.png" class="user-profile-status2">
+
+                                    </div>
+                                    <div class='col-md-6 pt-3'>
+                                        <span class='contact-list-username'>Gupta</span><br>
+                                        <span class='contact-list-message'>Hello Gupta</span>
+                                    </div>
+                                    <div class="col-md-2 pt-3"><span class="contact-list-time">16:52</span></div>
+                                </div>
+                            </div>
+                            <!-- contact list1 :: end  -->
+                            <!-- contact list2 :: start  -->
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-md-4">
+                                        <img src="assets/images/Rectangle 50.png" class='suggested-profile'>
+                                        <img src="assets/images/Icon awesome-circle.png" class="user-profile-status2">
+
+                                    </div>
+                                    <div class='col-md-6 pt-3'>
+                                        <span class='contact-list-username'>Gupta</span><br>
+                                        <span class='contact-list-message'>Hello Gupta</span>
+                                    </div>
+                                    <div class="col-md-2 pt-3"><span class="contact-list-time">16:52</span></div>
+                                </div>
+                            </div>
+                            <!-- contact list2 :: end  -->
+                            <!-- contact list3 :: start  -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/images/Rectangle 50.png" class='suggested-profile'>
+                                        <img src="assets/images/Icon awesome-circle.png" class="user-profile-status2">
+
+                                    </div>
+                                    <div class='col-md-6 pt-3'>
+                                        <span class='contact-list-username'>Gupta</span><br>
+                                        <span class='contact-list-message'>Hello Gupta</span>
+                                    </div>
+                                    <div class="col-md-2 pt-3"><span class="contact-list-time">16:52</span></div>
+                                </div>
+                            </div>
+                            <!-- contact list3 :: end  -->
+                            <!-- contact list4 :: start  -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/images/Rectangle 50.png" class='suggested-profile'>
+                                        <img src="assets/images/Icon awesome-circle.png" class="user-profile-status2">
+
+                                    </div>
+                                    <div class='col-md-6 pt-3'>
+                                        <span class='contact-list-username'>Gupta</span><br>
+                                        <span class='contact-list-message'>Hello Gupta</span>
+                                    </div>
+                                    <div class="col-md-2 pt-3"><span class="contact-list-time">16:52</span></div>
+                                </div>
+                            </div>
+                            <!-- contact list4 :: end  -->
+                            <!-- contact list5 :: start  -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/images/Rectangle 50.png" class='suggested-profile'>
+                                        <img src="assets/images/Icon awesome-circle.png" class="user-profile-status2">
+
+                                    </div>
+                                    <div class='col-md-6 pt-3'>
+                                        <span class='contact-list-username'>Gupta</span><br>
+                                        <span class='contact-list-message'>Hello Gupta</span>
+                                    </div>
+                                    <div class="col-md-2 pt-3"><span class="contact-list-time">16:52</span></div>
+                                </div>
+                            </div>
+                            <!-- contact list5 :: end  -->
+                            <!-- contact list6 :: start  -->
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="assets/images/Rectangle 50.png" class='suggested-profile'>
+                                        <img src="assets/images/Icon awesome-circle.png" class="user-profile-status2">
+
+                                    </div>
+                                    <div class='col-md-6 pt-3'>
+                                        <span class='contact-list-username'>Gupta</span><br>
+                                        <span class='contact-list-message'>Hello Gupta</span>
+                                    </div>
+                                    <div class="col-md-2 pt-3"><span class="contact-list-time">16:52</span></div>
+                                </div>
+                            </div>
+                            <!-- contact list6 :: end  -->
+                            <!-- contact list7 :: start  -->
+                            <div class="container-fluid">
+                                <div class="row ">
+                                    <div class="col-md-4">
+                                        <img src="assets/images/Rectangle 50.png" class='suggested-profile'>
+                                        <img src="assets/images/Icon awesome-circle.png" class="user-profile-status2">
+                                        
+                                    </div>
+                                    <div class='col-md-6 pt-3'>
+                                        <span class='contact-list-username'>Gupta</span><br>
+                                        <span class='contact-list-message'>Hello Gupta</span>
+                                    </div>
+                                    <div class="col-md-2 pt-3"><span class="contact-list-time">16:52</span></div>
+                                </div>
+                            </div>
+                            <!-- contact list7 :: end  -->
+                            <!-- profiles button :: start  -->
+                            <div class="container-fluid">
+                                <div class="row pt-4 pl-5">
+                                    <div class="col-md-12"><button class="login-btn res-profiles-btn text-white" type="submit">Profiles</button></div>
+                                </div>
+                            </div>
+                            <!-- profiles button :: end  -->
+                            
+                        </div>
+                        
+                    </div>
+                    <!-- left chat section :: end  -->
+                    <!-- right chat section :: start  -->
+                    <div class="col-md-7">
+                        <div class="right-chat-holder">
+                            <!-- upper section :: start  -->
+                            <div class="container-fluid">
+                                <div class="row border-bottom">
+                                    <div class="col-md-2">
+                                        <img src="assets/images/Rectangle-14.png"> 
+                                    </div>        
+                                    <div class="col-md-8">
+                                       <span class='pt-1'>Jasmine Kaur</span>
+                                        <br>
+                                        <div class="text-chat-profile pt-2">
+                                            <img src="assets/images/Icon awesome-circle.png"> Online | 46 meters away
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2" >
+                                        <div class="chat-user-edit"><i class="fa fa-ellipsis-v user-res-icon" ></i></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- upper section :: end  -->
+                            <!-- chat messages section :: starts  -->
+                            <div class="container-fluid pb-3 ml-3 pt-3 ">
+                                <div class="row">
+                                    <img src="assets/images/Rectangle-14.png" class="user-chat-img rounded-circle"> 
+                                    <button class='sender-message'>Hii, How are you?</button>
+                                </div>
+                                <div class="row mr-3">
+                                    <div class="col-md-12">
+                                        <div class='text-right'><button class='your-message'>Hello, fine</button></div>
+                                    </div>
+                                   
+                                </div>
+
+                                <div class="row">
+                                    <img src="assets/images/Rectangle-14.png" class="user-chat-img rounded-circle"> 
+                                    <button class='sender-message'>What are you doing?</button>
+                                </div>
+                                <div class="row">
+                                    <img src="assets/images/Rectangle-14.png" class="user-chat-img rounded-circle"> 
+                                    <button class='sender-message'>Tell me</button>
+                                </div>
+                                <div class="row mr-3">
+                                    <div class="col-md-12">
+                                        <div class='text-right'><button class='your-message'>nothing</button></div>
+                                    </div>  
+                                </div>
+                                <div class="row">
+                                    <img src="assets/images/Rectangle-14.png" class="user-chat-img rounded-circle"> 
+                                    <button class='sender-message'>Awesome What's new?</button>
+                                </div>
+                                <div class="row mr-3">
+                                    <div class="col-md-12">
+                                        <div class='text-right'><button class='your-message'>Hey, I'm testing out group
+                                            messaging</button></div>
+                                    </div>  
+                                </div>
+                                <div class="row">
+                                    <img src="assets/images/Rectangle-14.png" class="user-chat-img rounded-circle"> 
+                                    <button class='sender-message'>Oh, it's alright.</button>
+                                </div>
+                                <div class="row">
+                                    <img src="assets/images/Rectangle-14.png" class="user-chat-img rounded-circle"> 
+                                    <button class='sender-message'>Maybe who's playing?</button>
+                                </div>
+                                <div class="row mr-3">
+                                    <div class="col-md-12">
+                                        <div class='text-right'><button class='your-message'>Let me call you</button></div>
+                                    </div>  
+                                </div>
+                                
+        
+                            </div>
+                            <!-- message sending section start -->
+                            <div class="container-fluid pt-5">
+                                <div class="row border-top pt-3 pb-3">
+                                    <div class="col-md-2 pt-1">
+                                        <img src='assets/images/Icon awesome-camera.png'> 
+                                        <img src='assets/images/Icon feather-smile.png'>
+                                   </div>
+                                    <div class="col-md-8">
+                                        <input type='text' class='form-control res-chat-write border-0' placeholder="Type a message...">
+                                    </div>
+                                    <div class="col-md-2 pt-1">
+                                        <img src='assets/images/send message.png'> 
+                                        <img src='assets/images/Icon ionic-ios-share-alt.png'>
+                                    </div>
+                                </div>  
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <!-- right chat section :: end  -->
+                </div>
+            </div>
+            <!-- chat sections :: end   -->
+        </div> 
+    </div>
+</section>
+<!-- End main body -->
+</body>
+</html>
+<!-- JS files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- owl script -->
+<script src="owl-carousel/js/owl.carousel.min.js"></script>
+<!-- custom js -->
+<script src="assets/js/scripts.js"></script>

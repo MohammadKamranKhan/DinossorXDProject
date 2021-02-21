@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <!-- including bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- owl carousel inclues css -->
+    <link href="owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="owl-carousel/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- responsive css  -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Header Section -->
+    <header class="header-section">
+        <nav class="navbar navbar-light shadow p-3  bg-white ">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logoo.png" class="logo-img">
+            </a>
+            <form class="form-inline">
+              <button class="login-btn text-white"  type="submit"><i class="fa fa-sign-out" aria-hidden="true"></i> Logout</button>
+              <a href="#"><img src="assets/images/Icon feather-shopping-cart.png"  class="cart-img mr-5"></a>
+            </form>
+        </nav>
+   </header>
+    <!-- Start main body -->
+   <section class="container-fluid">
+    <div class="row ">
+        <!-- Start sidebar -->
+        <div class="col-md-3  pl-0 shadow-lg bg-white sidebarShow"  id="collapseExample">
+            <div class="sidebar pt-5  h-100 " >
+
+                <ul>
+                    <li class="active"><a href="#" ><img src="assets/images/Icon awesome-shopping-bag.png" class="pr-3"> Purchase </a></li>
+                    <li><a href="#"><img src="assets/images/Icon material-payment.png" class="pr-3"> Payment</a></li>
+                    <li><a href="#"><img src="assets/images/Icon feather-settings.png" class="pr-3"> Settings</a></li>
+                    <li><a href="#"><img src="assets/images/Icon feather-help-circle.png" class="pr-3"> Help</a></li>
+                    <li><a href="#"><img src="assets/images/Icon awesome-boxes.png" class="pr-3"> Categories</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <!-- End sidebar -->
+        <div class="col-md-9">
+            <a  href="javascript:void(0)" onclick="hideSidebar()"><img src="assets/images/Icon awesome-bars.png" class="sidebar-menu" ></a>
+            <div class="row mt-5 pl-md-5">
+                <div class="col-md-1 mr-5">
+                    <button class="image-slider-btn">
+                        <span class="nearby-text">Nearby</span>
+                        <span class="profiles-text">Profiles</span>
+                    </button>
+                    <div class="label-circle shadow">
+                        <span class="label-text">4</span>
+                    </div>
+                </div>
+                <div class="col-md-10 res-caro">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item slider-images" ><img src="assets/images/Rectangle-15.png" >
+                        </div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-14.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-13.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-12.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-11.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-10.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-9.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-8.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-7.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-6.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-5.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-4.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-3.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-2.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-1.png" ></div>
+                        <div class="item slider-images"><img src="assets/images/Rectangle-50.png" ></div>
+                    </div>
+                    <div class="chevron-next-right owl-next">
+                        <!-- <button type="button" role="presentation" class="owl-next"><span aria-label="Next">›</span></button> -->
+                        <i class="fa fa-chevron-right " role="presentation"></i>
+                    </div>
+                </div>
+            </div>
+             <!-- Post Composing Section Start -->
+             <div class="row mt-4">
+                <div class="col-md-2 pl-5" id="res-post-image">
+                    <img src="assets/images/Rectangle 50.png" clas="post-image">
+                    <figcaption class="figure-caption pl-2">
+                        
+                            <img src="assets/images/gg.png"> + 
+                            <span class="img-cap">
+                                2130
+                            </span>
+                    </figcaption>
+                </div>
+                <div class="col-md-10 mt-2">
+                    <div class="input-group  ">
+                        <input type="text"  class="form-control pb-2 post-input-bar ml-2" placeholder="Looking For ?">
+                        <div class="input-group-append">
+                            <button class="p-4 input-group-text" id="basic-addon2">Search</button>
+                        </div>
+                    </div> 
+                </div> 
+            </div>
+            <!-- Message Area Start -->
+            <div class="container-fluid">
+                <div class="row mt-4">
+                    <div class="col-md-1 pl-5">
+                        <img src="assets/images/Icon awesome-envelope.png" class="res-envelope">
+                    </div>
+                    <div class="col-md-1">
+                        <img src="assets/images/Icon material-notifications.png">
+                    </div> 
+                    <div class="col-md-2" id="res-shop">
+                        <select class="form-control select-option-box" >
+                            <option >Shop</option>
+                        </select>
+                    </div>
+                    <div class="col-md-2" id="res-sell">
+                            <span class="user-section-sell">Sell</span>
+                    </div> 
+            </div>
+            </div>
+            <!-- Message Area End -->
+            <!-- Vide section starts -->
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-md-2 pl-4">
+                        <img src="assets/images/RectangleSofa.png" class="post-image">
+                            <figcaption class="figure-caption pl-2">
+                                
+                                    <img src="assets/images/gg.png"> + 
+                                    <span class="img-cap">
+                                        2130
+                                    </span>
+                            </figcaption>
+                    </div>
+                    <div class="col-md-10">
+                        
+                        <div class="shadow rounded bg-white ">
+                            <div class="container-fluid  pb-2 ">
+                                
+                                <!-- card image section start -->
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <!-- <img src="assets/images/paul-weaver-nWidMEQsnAQ-unsplash.png" class="mt-2 card-image">
+                                        <img src="assets/images/Path 35.png" class="video-cicle">
+                                        <img src="assets/images/Path 36.png" class="video-play">
+                                        <img src="assets/images/Icon map-fullscreen.png" class="video-screen-large"> -->
+                                        <video poster="assets/images/paul-weaver-nWidMEQsnAQ-unsplash.png" style="width:100%;height:400px" controls="">
+                                            <source src="assets/videos/video-demo.mp4" type="video/mp4">
+                                          Your browser does not support the video tag.
+                                          </video>
+                                    </div>
+                                </div>  
+                                <!-- card image section ends -->
+                                <!-- card option starts -->
+                                <div class="row mt-3">
+                                    <div class="col-md-4"><span class="contact-title"> <img src="assets/images/Icon awesome-envelope.png"> Contact </span></div>
+                                    <div class="col-md-4"><span class="contact-title">Dinning Table (6 Setter)</span></div>
+                                    <div class="col-md-4 text-right"><span>£ 600</span></div>
+                                </div>
+                                <!-- card option ends -->
+                                
+                            </div>
+                            <hr>                     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Vide section ends -->
+            <!-- Payment section starts  -->
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-10 res-caro">
+                        <div class="shadow rounded bg-white">
+                            <!-- color,quantity,size section starts  -->
+                               <div class="row pt-2 container-fluid">
+                                   <div class="col-md-4">Color:              <input type="color"  class='res-select-prop'></div>
+                                   <div class="col-md-4" >Qty:   <select  class='res-select-prop'><option>1</option></select></div>
+                                   <div class="col-md-4 ">Size:   <select class='res-select-prop'><option>1</option></select></div>
+                               </div>
+                            <!-- color,quantity,size section ends  -->
+                            <!-- text section starts  -->
+                            <div class="row container-fluid pt-3">
+                                <div class="col-md-6 ">
+                                   <p class='payment-text'>Postage : Estimate Delivery , Tuesday 26 , Jan </p> 
+                                </div>
+                            </div>
+                            <!-- text section ends  -->
+                            <!-- address and payment amount starts here  -->
+                              <div class="row container-fluid pt-3">
+                                  <div class="col-md-6">
+                                      <span>Post to:</span>
+                                      <div class="shadow rounded bg-white">
+                                          <p class='p-2'>133 Road Wild , London UK <br>
+                                            NW10 235                   <br>
+                                            8796586325</p>
+                                      </div>
+                                      <div><button style='width: 150px;float:right' class="login-btn text-white" type="submit">Add new address</button></div>
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="shadow rounded pt-3 bg-white pb-3">
+                                        <!-- subtotal starts  -->
+                                        <div class="row container-fluid">
+                                            <div class="col-md-6">Sub total:</div>
+                                            <div class="col-md-6 text-right">1200</div>
+                                        </div>
+                                        <!-- subtotal ends  -->
+                                        <!-- postage starts  -->
+                                        <div class="row container-fluid pb-2 border-bottom">
+                                            <div class="col-md-6">Postage:</div>
+                                            <div class="col-md-6 text-right">+ 300</div>
+                                        </div>
+                                        <!-- postage ends  -->
+                                        <!-- subtotal starts  -->
+                                        <div class="row container-fluid pt-1">
+                                            <div class="col-md-6">Order Total:</div>
+                                            <div class="col-md-6 text-right">1500</div>
+                                        </div>
+                                        <!-- subtotal ends  -->
+                                    </div>
+                                    <!-- proceed to pay starts -->
+                                       <div class="pt-2 text-right">
+                                             <p>All Payment & Refund are secure.</p>
+                                             <p><button style='width: 150px;float:right' class="login-btn text-white" type="submit">Proceed to Pay</button></p>
+                                       </div>
+                                    <!-- proceed to pay ends -->
+                                  </div>
+                              </div>
+                            <!-- address and payment amount ends here  -->
+
+                            <!-- pay with stars -->
+                            <div class="row container-fluid pt-3">
+                                <div class="col-md-6 pb-5">
+                                    <p>Pay with:</p>
+                                    <p>
+                                        <input type='radio' name='payment' checked> Paypal
+                                        <input type='radio' name='payment' > Stripe  
+
+                                    </p>
+                                    <p><button style='width: 180px;' class="mt-2 login-btn text-white" type="submit">Add debit/credit card</button></p>
+                                    <div class="row">
+                                        <div class="col-md-10"><input type='text'  placeholder="voucher code" class="form-control" size='20'></div>
+                                        <div class="col-md-2 voucher-id" ><button style='width: 180px;' class=" login-btn text-white" type="submit">Apply Voucher </button></div>
+                                    </div>
+                                </div>
+                                 
+                            </div>
+                            <!-- pay with ends -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Payment section ends  -->
+        </div> 
+    </div>
+</section>
+<!-- End main body -->
+</body>
+</html>
+<!-- JS files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- owl script -->
+<script src="owl-carousel/js/owl.carousel.min.js"></script>
+<!-- custom js -->
+<script src="assets/js/scripts.js"></script>

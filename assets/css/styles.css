@@ -1,0 +1,489 @@
+/*
+    StyleSheets for index page
+*/
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.login-btn{
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    border:none;
+    /* background-color:linear-gradient(to right,#AB0B0B, #EC3232); */
+    background: linear-gradient(to right, #EC3232 0%, #AB0B0B 100%);
+    border-radius: 7px;
+    padding:10px;
+    width:194px;
+    height: 39px;
+    margin-right: 39px;
+}
+.logo-img {
+    width:100%;
+}
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    /* height: auto; */
+    
+}
+/* Sidebar links */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+   }
+.sidebar ul{
+    list-style-type: none;
+}
+.sidebar ul a {
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    
+}
+.active {
+    background:rgba(99, 91,92, 0.17);
+    border-radius: 15px;
+    width:240px;
+}
+.sidebar-menu{
+    position: absolute;
+    left: 1%;
+    z-index: 1;
+    top: 10px;
+}
+.owl-dots{
+    display: none;
+}
+.image-slider-btn{
+    border:none;
+    background:#60BD91;
+    width:89px;
+    padding:5px;
+    color:white;
+}
+.nearby-text{
+    font-size: 13px;
+    font-weight: 500;
+}
+.profiles-textt{
+    font-weight: 500;
+    font-size: 20px;
+}
+.label-circle {
+    background-color: #ffffff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 90px;
+}
+.label-circle .label-text{
+    color: #D60404;
+    font-size: 12px;
+    font-weight: 500;
+    position: relative;
+    left: 20%;
+}
+.user-p{
+    position: absolute;
+    top: 50%;
+}
+.res-select-prop{
+    border:none;
+}
+.res-btn-follow{
+    width:125px;
+}
+.owl-stage > .active {
+    background:white;
+}
+.custom-owl-hide{
+    display:none;
+}
+.slider-images{
+    width: 70px;
+}
+.right-nav {
+    cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+
+}
+.owl-prev {
+    display: none;
+}
+.chevron-next-right {
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 20px;
+}
+.post-image{
+    width: 51px;
+    height:51px;
+}
+.post-input-bar{
+    width: 97%;
+    border-radius: 15px;
+    border: 1px solid #707070;
+    background-image: url('../images/dinosaur.png');
+    background-position: 0px 6px; 
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    font-size: 33px;
+    font-weight: 400;
+    padding: 15px 0px 13px 80px;
+    height:75px;
+}
+.post-input-bar:focus{
+    border:none;
+}
+.post-input-bar::placeholder{
+    font-size: 33px;
+    font-weight: 400;
+}
+.img-cap{
+    font-size: 10px;
+    font-weight: 400;
+    color:black;
+}
+.select-option-box{
+    background-color: rgba(99, 91,92, 0.17);
+}
+.user-section-sell{
+    font-size: 26px;
+    font-weight: 400;
+}
+.sponsered-text{
+    font-size: 15px;
+    font-weight: 400;
+}
+.sponsered-card-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+}
+.sponsered-card-text{
+    color: gray;
+    font-size: 12px;
+}
+.card-image{
+    width: 100%;
+}
+.btn-card{
+    background:rgba(99, 91,92, 0.17);
+    border:none;
+    border-radius:5px;
+    width:100%;
+}
+.card-footer-text {
+    color:rgba(99, 91,92, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+.buy-button-card {
+    background: linear-gradient(to right, #EC3232 0%, #AB0B0B 100%);
+    border:none;
+    font-size: 12px;
+    color: white;
+    border-radius: 5px;
+    padding: 6px;
+    width:100%;
+}
+.sofa-card-title{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+.video-cicle{
+    position: absolute;
+    top: 25%;
+    left: 41%;
+}
+.video-play{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+}
+.video-screen-large{
+    position: absolute;
+    top: 85%;
+    right: 4%;
+    width: 30px;
+    cursor:pointer;
+}
+.push-button{
+    background-color: #3886FE;
+    border: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 7px;
+    padding: 10px;
+    width: 110px;
+}
+.auction-card-title{
+    color: #BD3234;
+    font-size: 14px;
+    font-weight: 500;
+}
+.auction-card-img{
+    width:8%;
+}
+.views-section{
+    position: absolute;
+    left: 3%;
+    top: 5%;
+    border: none;
+    /* background: #FF1313; */
+    border-radius: 7px;
+    opacity: 45%;
+    padding: 5px;
+    font-size: 16px;
+    width:15%;
+    /* background: rgba(255,19,19,0.4); */
+}
+.button-follow{
+    background: white;
+    border: none;
+    width: 25%;
+    position: absolute;
+    bottom: 0;
+    left: 40%;
+    padding: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.text-message-auction{
+    color: #D60404;
+    font-weight: bold;
+}
+.auction-post-footer-btn{
+    border: none;
+    font-weight: 500;
+    border-radius: 7px;
+    width: 70px;
+    height: 38px;
+}
+.profile-photo1{
+    height:200px;
+}
+.profile-photo-edit{
+    position: absolute;
+    top: 0;
+    left: 70%;
+    height: 25px;
+    width: 25px;
+}
+.profile-title{
+    font-weight: 600;
+    font-size:40px;
+}
+.location-img{
+    position: absolute;
+    top: 15px;
+    right: 30;
+    left: 30;
+    color: #8A8787;
+    font-size: 15px;
+    font-weight: 600;
+    padding-left:2%;
+}
+.personal-info-heading{
+    font-weight: 600;
+    font-size: 18px;
+}
+.gray-color-text{
+    color: #8A8787;
+}
+.icon-holder{
+    height: 40px;
+    width: 40px;
+    background: #AB0B0B;
+    border-radius: 50%;
+    margin:10px;
+}
+.icon-social{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    position: relative;
+}
+.auction-post-image{
+    position: relative;
+    top: 5%;
+    right: 50%;
+}
+.profile-container{
+    width: 100%;
+    height: auto;
+    border:1px solid #8A8787;
+}
+.profile-pic1{
+    width: 100%;
+    height: 400px;
+}
+.profile-about{
+    color: #706C6C;
+    font-weight: 500;
+}
+.profile-edit1{
+    position: relative;
+    top: -10%;
+    left: 90%;
+}
+.sidebarShow{
+    display: block;
+}
+.sidebarHide{
+    display: none;
+}
+.btn{
+    background-color: #4B9572;
+    color: white;
+  }
+  .Login{
+    color: black;
+}
+
+.login-btn2{
+    font-family: 'Poppins', sans-serif;
+        font-size: 14px;
+        font-weight: 500;
+        border: none;
+        background-color: #4B9572; 
+        border-radius: 7px;
+        padding: 10px;
+        width: 194px;
+        height: 39px;
+}
+
+.contact-title{
+    color: red;
+}
+.payment-text{
+    font-weight: 400;
+}
+.add-product-btn{
+    background-color: rgba(99, 91,92, 0.17);
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    font-weight: 400;
+    font-size: 15px;
+}
+.near-you-profile-img{
+    width: 170px;
+    height: 160px;
+}
+.profile-info-sec{
+    width: 102%;
+    height: 25px;
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 85%;
+}
+.profile-info-status{
+    position: absolute;
+    top: 68%;
+    left: 3%;
+}
+.profile-distance{
+    color: white;
+    padding-left: 3px;
+}
+.profile-name{
+    position: absolute;
+    top: 2%;
+    left: 3%;
+    color:white;
+}
+.left-chat-holder,.right-chat-holder{
+    width: 100%;
+    height: auto;
+    border: 1px solid rgba(99, 91,92, 0.17);
+}
+.user-profile-status{
+    position: absolute;
+    top: 80%;
+    /* right: 3%; */
+    left: 95px;
+}
+.user-profile-name{
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 60px;
+}
+.search-icon{
+    background-image: url('../images/Icon awesome-search.png');
+    background-repeat: no-repeat;
+    background-position: 5px 10px;
+    padding-left: 25px;
+}
+.contact-list-username,.contact-list-message,.contact-list-time{
+    font-size: 12px;
+}
+.contact-list-username{
+    font-size: 15px;
+    font-weight: 500;
+}
+.contact-list-message{
+    color:rgba(99, 91,92, 0.77);
+}
+.text-chat-profile{
+    font-size: 14px;
+}
+.chat-user-edit{
+    font-size: 20px;
+    position: absolute;
+    top: 30%;
+    left: 80%;
+}
+.user-chat-img{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50em;
+    -moz-border-radius: 50em;
+    border-radius: 50em;
+}
+.sender-message,.your-message{
+    background: #DCDCDC;
+    border-radius: 20px;
+    border: none;
+    font-size: 12px;
+    height: 30px;
+    /* position: absolute; */
+    /* top: 10%; */
+    /* left: 12%; */
+    font-weight: 500;
+    margin-top: 10px;
+    padding: 5px 10px;
+}
+.your-message{
+    background-color: #21BBFF;
+    color:white;
+}
+.suggested-profile{
+    width: 50%;
+}
+.user-profile-status2{
+    position: absolute;
+    top: 50%;
+    /* right: 3%; */
+    left: 50px;
+}

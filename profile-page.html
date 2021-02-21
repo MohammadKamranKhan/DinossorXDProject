@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <!-- including bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- owl carousel inclues css -->
+    <link href="owl-carousel/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="owl-carousel/css/owl.theme.default.min.css" rel="stylesheet">
+    <!-- responsive css  -->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+<body>
+        <!-- Start Header Section -->
+        <header class="header-section">
+            <nav class="navbar navbar-light shadow p-3  bg-white ">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/logoo.png" class="logo-img">
+                </a>
+                <form class="form-inline">
+                  <button class="login-btn text-white"  type="submit"><i class="fa fa-sign-out-alt"></i> Logout</button>
+                  <a href="#"><img src="assets/images/Icon feather-shopping-cart.png"  class="cart-img mr-5"></a>
+                </form>
+            </nav>
+      
+        </header>
+        <!-- Start main body -->
+    <section class="container-fluid">
+        <!-- Image Slider Start -->
+        <div class="row ">
+            <!-- Start sidebar -->
+            <div class="col-md-3  pl-0 shadow-lg bg-white sidebarShow" class="collapse" id="collapseExample">
+                <div class="sidebar pt-5  h-100 " >
+
+                    <ul>
+                        <li class="active"><a href="#" ><img src="assets/images/Icon awesome-shopping-bag.png" class="pr-3"> Purchase </a></li>
+                        <li><a href="#"><img src="assets/images/Icon material-payment.png" class="pr-3"> Payment</a></li>
+                        <li><a href="#"><img src="assets/images/Icon feather-settings.png" class="pr-3"> Settings</a></li>
+                        <li><a href="#"><img src="assets/images/Icon feather-help-circle.png" class="pr-3"> Help</a></li>
+                        <li><a href="#"><img src="assets/images/Icon awesome-boxes.png" class="pr-3"> Categories</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End sidebar -->
+            <div class="col-md-9">
+                <a href="javascript:void(0)" onclick="hideSidebar()"><img src="assets/images/Icon awesome-bars.png" class="sidebar-menu" ></a> 
+                <div class="row mt-5 pl-md-5">
+                    <div class="col-md-1 mr-5">
+                        <button class="image-slider-btn">
+                            <span class="nearby-text">Nearby</span>
+                            <span class="profiles-text">Profiles</span>
+                        </button>
+                        <div class="label-circle shadow">
+                            <span class="label-text">4</span>
+                        </div>
+                    </div>
+                    <div class="col-md-10 res-caro">
+                        <div class="owl-carousel owl-theme">
+                            <div class="item slider-images" ><img src="assets/images/Rectangle-15.png" >
+                            </div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-14.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-13.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-12.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-11.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-10.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-9.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-8.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-7.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-6.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-5.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-4.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-3.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-2.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-1.png" ></div>
+                            <div class="item slider-images"><img src="assets/images/Rectangle-50.png" ></div>
+                        </div>
+                        <div class="chevron-next-right owl-next">
+                           
+                            <i class="fa fa-chevron-right " role="presentation"></i>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Image Slider End -->
+                
+                <!-- Sofa Setter Section end -->
+
+                <!-- Auction Section end -->
+
+                    <!-- Profile Card Start -->
+             <div class="container-fluid mt-3">
+                <div class="row shadow bg-white">
+                    <div class="col-md-3 ">
+                        <img src="assets/images/Rectangle 201.png" class="profile-photo1">
+                        <img src="assets/images/Icon awesome-edit.png" class="profile-photo-edit">
+                        <br>
+                        <div class="pl-4">
+                            <button class="login-btn text-white mt-3 mb-2 text-center" style="width:120px" type="submit">Follow</button>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-9">
+                        <!-- info section start -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3 class="profile-title">Jermy Rose <span class="location-img "><img src="assets/images/Icon material-location-on.png" > UK</span></h3>
+                                
+                                <img src="assets/images/Icon awesome-circle.png"> Online
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-2 mt-2 text-right">
+                                <img src="assets/images/Icon awesome-bookmark.png">
+                            </div>
+                        </div>
+                        <!-- info section ended -->
+                        <!-- info text starts  -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="text-conainer mt-2">
+                                    <h5 class="personal-info-heading">Personal Information:</h5>
+                                    <p>Gender : <span class="gray-color-text">Male</span> </p>
+                                    <p>Age    : <span class="gray-color-text">26</span> </p>
+                                    <p>Email : <span class="gray-color-text">abc@gmail.com</span> </p>
+                                </div>
+                                
+                            </div>
+                            <div class="col-md-4"></div>
+                            <div class="col-md-2">
+                                    <div class="social-media-icons">
+                                        <div class="icon-holder ml-lg-auto"><img src="assets/images/Icon awesome-instagram.png" class="icon-social"></div>
+                                        <div class="icon-holder ml-lg-auto"><img src="assets/images/Icon awesome-google-plus-g.png" class="icon-social"></div>
+                                        <div class="icon-holder ml-lg-auto"><img src="assets/images/Icon awesome-facebook-f.png" class="icon-social"></div>
+                                        <div class="icon-holder ml-lg-auto"><img src="assets/images/Icon awesome-twitter.png" class="icon-social"></div>
+                                        <div class="icon-holder ml-lg-auto"><img src="assets/images/Icon awesome-linkedin-in.png" class="icon-social"></div>
+                                    </div>
+                            </div>
+                        </div>
+                        <!-- info text ends  -->
+                        <!-- buttons starts -->
+                        <div class="container">
+                            <div class="row mb-5">
+                                <div class="col-md-3 mt-2"><button class="btn-card p-1"><img src="assets/images/Icon material-message.png"> <strong>Send message </strong></button></div>
+                                <div class="col-md-3 mt-2"><button class="btn-card p-1"><img src="assets/images/Icon awesome-phone-alt.png"> <strong>Contacts </strong> </button></div>
+                                <div class="col-md-3 mt-2"><button class="btn-card p-1"><img src="assets/images/Icon material-report.png"> <strong>Report user </strong> </button> </button></div>
+                            </div>
+                        </div>
+                        <!-- buttons ends -->
+                        <!-- text starts -->
+                        <p class="text-right" style="font-size: 25;font-weight: 600;">Followed 235+</p>
+                        <!-- text ends -->
+
+                    </div>
+                </div>
+           </div>
+
+                <!-- Profile Card End -->
+          </div>
+        </div>
+    </section>
+    <!-- End main body -->
+    
+</body>
+</html>
+<!-- JS files -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- owl script -->
+<script src="owl-carousel/js/owl.carousel.min.js"></script>
+<!-- custom js -->
+<script src="assets/js/scripts.js"></script>

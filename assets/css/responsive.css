@@ -1,0 +1,205 @@
+/*
+  Media Query : min-width 320px and max-width: 480px
+*/
+@media screen and (min-width: 320px) and (max-width:768px){
+  /* setting logo */
+  .logo-img {
+        width: 100%;
+   }
+   
+    /* reponsive-form */
+    .res-form{
+      padding-top: 15px;
+    }
+    .res-cart{
+      position: absolute;
+      top: 71%;
+      clear: both;
+      left:80%;
+    }
+    .sidebar-menu{
+      position: absolute;
+      left: 80%; 
+    }
+    .post-input-bar::placeholder{
+      font-size: 16px;
+      font-weight: 400;
+    }
+    .post-input-bar{
+      padding: 5px 3px 5px 66px;
+    }
+    .image-slider-btn{
+      padding:0;
+    }
+    .res-caro{
+      padding: 5px;
+      padding-right: 30px;
+    }
+    .fa-chevron-right{
+      padding-right: 15px;
+    }
+    .btn-card{
+      margin-top:5px;
+    }
+    .auction-post-footer-btn{
+      margin-top:5px;
+    }
+    .views-section{
+      width: 30%;
+      margin-top: 5px;
+      margin-left: 10px;
+    }
+    .button-follow{
+      font-size:15px;
+    }
+    .video-screen-large{
+      position: absolute;
+      top: 75%;
+      right: 10%;
+      width: 20px;
+      cursor: pointer;
+    }
+    .res-envelope{
+      position: absolute;
+      top: 30%;
+      left: 18%;
+    }
+    .voucher-id{
+      padding-top:10px;
+    }
+    .res-select-prop{
+      border:1px solid black;
+      width:100%;
+    }
+    .profile-photo1{
+      padding-top:20px;
+    }
+    .location-img {
+      font-size: 10px;
+    }
+    .social-media-icons{
+      display:flex;
+    }
+    .profile-edit1{
+      position: relative;
+      /* bottom: -4%; */
+      left: 85%;
+    }
+    .res-btn,.res-btn-follow{
+      width: 125px;
+      margin-top: 10px;
+      margin-left: 10px;
+    }
+    .profile-info-sec{
+      width:72%;
+    }
+    .user-profile-status2{
+      position: absolute;
+      top: 80%;
+      /* right: 3%; */
+      left: 42%;
+    }
+    .res-profiles-btn{
+      width:145px;
+    }
+    .user-res-icon{
+      position: relative;
+      top: -120px;
+      left: 30px;
+    }
+    .res-chat-write{
+      margin:10px 0px;
+    }
+    .res-profiles-btn{
+      width:115px;
+    }
+    .add-product-btn-res{
+      margin-top:5px;
+    }
+    .user-p{
+      position: absolute;
+      left: 83%;
+      top: -113px;
+    }
+}
+
+/*
+  Media Query : max-width: 769px and min-1200px
+*/
+@media screen and (min-width:768px) and (max-width:1200px){
+    /* header sections */
+    .header-section{
+      width: 103%;
+    }
+    .active{
+      width:145px;
+    }
+    .profile-photo1{
+      padding-top:20px;
+    }
+    .res-caro{
+      padding: 5px;
+      padding-right: 30px;
+    }
+    .res-input-group{
+      margin-left:25px;
+    }
+    .push-button{
+      width:90px;
+    }
+    .post-input-bar{
+      padding: 5px 3px 5px 66px;
+    }
+    .profile-pic1{
+      margin-top:60px;
+    }
+    .res-btn-follow{
+      width:115px;
+    }
+    .profile-info-sec{
+      width:26%;
+    }
+    .user-profile-status2{
+      position: absolute;
+      top: 76%;
+      left: 42%;
+    }
+    .res-profiles-btn{
+      width:145px;
+    }
+    .user-res-icon{
+      position: relative;
+      top: -120px;
+      left: 30px;
+    }
+    .res-chat-write{
+      margin:10px 0px;
+    }
+    .res-profiles-btn{
+      width:115px;
+    }
+}
+
+/* Media query for more than 481px devices */
+@media screen and (min-width:481px) and (max-width:768px){
+  .profile-info-sec {
+    width: 43%;
+  }
+  .add-product-btn-res{
+    margin-top:5px;
+  }
+
+}
+
+/* Media query for more than 1200px devices */
+@media screen and (min-width:1201px){
+  .user-profile-status2{
+    position: absolute;
+    top: 48%;
+    left: 38%;
+  }
+  .profile-info-sec{
+    width: 58%;
+  }
+  
+}
